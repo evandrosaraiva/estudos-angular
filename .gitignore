@@ -1,0 +1,7 @@
+# Ignore files
+README.txt
+package-lock.json
+
+# Ignore folders 
+node_modules
+
