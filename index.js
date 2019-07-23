@@ -24,15 +24,17 @@ let list_games = [
     }    
 ]
 
-//buscar jogo samurai e printar
-
 let resultado;
 
+//ordena games em ordem crescente
 resultado = _.orderBy(list_games, ['nome'], ['asc']);
-/*
-resultado = _.filter(list_games, (jogo_atual) => {
-    return jogo_atual.ano >= 1994
-})
-*/
 
+//orderna games por ano decrescente
+resultado = _.orderBy(list_games, ['ano'], ['desc']);
+
+// lista de jogso de trás pra frente
+resultado = _.reverse(list_games);
+
+//remover da lista o FIFA
+resultado = _.pullAllBy(list_games, [{ 'nome': 'Fifa' }], 'nome');
 console.log(resultado);
