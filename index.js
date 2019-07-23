@@ -29,10 +29,5 @@ let list_games = [
 let resultado;
 
 resultado = _.orderBy(list_games, ['nome'], ['asc']);
-/*
-resultado = _.filter(list_games, (jogo_atual) => {
-    return jogo_atual.ano >= 1994
-})
-*/
 
 console.log(resultado);
