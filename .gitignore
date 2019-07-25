@@ -1,6 +1,7 @@
 # Ignore files
 README.txt
 package-lock.json
+.DS_Store
 
 # Ignore folders 
 node_modules
